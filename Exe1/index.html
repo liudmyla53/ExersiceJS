@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Fira+Code:wght@300..700&family=Lovers+Quarrel&family=Moo+Lah+Lah&display=swap" rel="stylesheet">
+    <title>Anee</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script defer src="./main.js"></script>
+</head>
+<body>
+   <div class="container">
+
+  <!-- Exercice 1 : Année bissextile -->
+  <div id="card" class="card">
+    <h1 class="moo-lah-lah-regular">Exercice 1 : Année bissextile</h1>
+    <label for="annee">Entrez une année :</label>
+    <input id="annee" type="number" placeholder="Ex : 2024">
+    <p id="error"></p>
+    <button id="verifier">Vérifier</button>
+    <p id="message1">Veuillez entrer une année valide</p>
+  </div>
+
+  <!-- Exercice 2 : Jeu du Juste Prix -->
+  <div id="card" class="card">
+    <h1 class="moo-lah-lah-regular">Exercice 2 : Jeu du Juste Prix</h1>
+    <div class="difficulte">
+      <p >Choisissez une difficulté :</p>
+      <button class="niveau" data-niveau="facile">Facile</button>
+      <button class="niveau" data-niveau="moyen">Moyen</button>
+      <button class="niveau" data-niveau="difficile">Difficile</button>
+    </div>
+    <p >Vies restantes : <span id="vies"></span></p>
+    <p id="indication">Choisissez un nombre entre 1 et [Choisir difficulté]</p>
+    <input type="number" id="proposition" placeholder="Votre nombre">
+    <br>
+    <button id="valider">Valider</button>
+    <p id="message2"></p>
+  </div>
+
+</div>
+
+</body>
+</html>
