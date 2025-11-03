@@ -32,23 +32,24 @@
   box-shadow: -5px 0px 1px #d34b1a;
   
 }
-
 button {
-        background-color:#d34b1a;
-        border-radius: 12px ;
-        padding: 0.5rem 1rem;
-        color: #fff;
-        border : 1px solid orangered;
-        font-size: 1rem;
-        padding: 10px 20px;
-        margin-top: 15px;
-        cursor: pointer;
-        transition: all 200ms ease-in-out;
+  background-color: #d34b1a;
+  border-radius: 12px;
+  padding: 10px 20px;
+  color: #fff;
+  border: 1px solid orangered;
+  font-size: 1rem;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
 }
-/* button:hover */
-        &:hover {
-            background-color: white;
-                    }
+
+
+button:hover {
+  background-color: white;
+  color: #d34b1a; /* pour que le texte reste visible */
+  border-color: #d34b1a;
+}
             
      input {
         height: 2rem;

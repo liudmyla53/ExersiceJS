@@ -1,6 +1,6 @@
 
 
-
+//document.querySelector("button").classList.add("indiquant"); 
 //document.getElementById()
 const V_BTN = document.getElementById('verifier');
 const INPUT_ANNEE = document.getElementById('annee');
@@ -71,8 +71,8 @@ BUT_NIVEAU.forEach(buton => {
         // console.log(max);
         // console.log(vies);
         // nombreMystere = Math.random() //0.000000.. & 0.9999999...
-        nombreMystere = Math.random() + 1 //1.000000.. & 1.9999999...
-        nombreMystere = Math.random() * max + 1 //1.000000.. & 10.9999999...
+        //nombreMystere = Math.random() + 1 //1.000000.. & 1.9999999...
+        //nombreMystere = Math.random() * max + 1 //1.000000.. & 10.9999999...
         nombreMystere = Math.floor(Math.random() * max + 1) //1 & 10
         // console.log(nombreMystere);
         INIDICATION.textContent=`Deviner le nombre entre 1 et ${max}`;
@@ -103,10 +103,19 @@ BUT_NIVEAU.forEach(buton => {
               if (vies<=0) {
                 MESSAGE2.innerText=`😔Perdu! Le nombre ${nombreMystere}`;
               }
-
-            }
+               
+            } 
+            if (isNaN(inputPrice)||inputPrice<1 || inputPrice>max ) {
+                    MESSAGE2.innerText=`⛔Entrée invalide : choisis un nombre entre 1 et ${max}`;
+                    INPUT_PROPOS.style.border = "3px solid red";
+                    return;
+                }
+                else{
+                    INPUT_PROPOS.style.border = "1px solid #ccc";
+                }
         })
         
     }
 )
+ INPUT_PROPOS.value = "";
 })
