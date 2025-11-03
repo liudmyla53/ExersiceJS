@@ -91,15 +91,19 @@ BUT_NIVEAU.forEach(buton => {
               if(inputPrice<nombreMystere){
                 MESSAGE2.innerText=`C'est plus grand que ${inputPrice}`;
                 vies--;
+                 VIES_TEXT.innerText=''.padEnd(vies*2,'🐄');
+
               }else if(inputPrice>nombreMystere){
                 MESSAGE2.innerText=`C'est moins que ${inputPrice}`;
                 vies--;
+                 VIES_TEXT.innerText=''.padEnd(vies*2,'🐄');
+                 //VIES_TEXT.innerText=''.padEnd(vies*2,'🐄');
               }else{
                 MESSAGE2.innerText=`🏆Felicitaion! C'est bien ${inputPrice}`;
                 
                 return;
               }
-              VIES_TEXT.innerText=''.padEnd(vies*2,'🐄');
+              //VIES_TEXT.innerText=''.padEnd(vies*2,'🐄');
               if (vies<=0) {
                 MESSAGE2.innerText=`😔Perdu! Le nombre ${nombreMystere}`;
               }
@@ -119,3 +123,5 @@ BUT_NIVEAU.forEach(buton => {
 )
  INPUT_PROPOS.value = "";
 })
+
+
